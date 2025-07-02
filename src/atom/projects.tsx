@@ -1,10 +1,10 @@
 import {atom} from 'jotai'
 
-interface Projects {
+interface Project {
     title: string
     image_path: string
     details: string
     project_url: string
 }
 
-export const projects = atom<Projects>
+export const projectsAtom = atom<Project[]>([])
